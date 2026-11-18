@@ -1,0 +1,20 @@
+# JetBrains / WebStorm
+.idea/
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ZIP archives
+*.zip
+
+# macOS
+__MACOSX/
+._*
+.DS_Store
