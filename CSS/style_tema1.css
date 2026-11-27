@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #0f172a;
+}
+
+nav a {
+  color:#00E600;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+nav a:hover {
+  background-color: #00E600;
+  color: #0f172a;
+ 
+}
+
+h1, h2 {
+  max-width: 50rem;
+  margin: 1.5rem auto;
+  padding: 0 1.5rem;
+}
+
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+}
+
+h2, h3 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+}
+
+nav {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+}
+
+.bunn-meny {
+  position: static; /* Overstyrer sticky så den ikke henger fast i skjermen */
+  display: flex;
+  justify-content: center; /* Midtstiller lenkene nederst */
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  background-color: #0f172a;
+}
+
+.bunn-meny a {
+  color: #00E600;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+
+.bunn-meny a:hover {
+  background-color: #00E600;
+  color: black;
+}
