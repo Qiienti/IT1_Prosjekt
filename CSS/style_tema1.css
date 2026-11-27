@@ -68,7 +68,7 @@ nav {
 .bunn {
   position: static; 
   display: flex;
-  justify-content: flex-start; 
+  justify-content: center; 
   gap: 1.5rem;
   padding: 1.5rem 2rem;
   background-color: #0f172a;
@@ -93,4 +93,49 @@ nav {
   width: 100%;
   height: auto;
   
+}
+
+.barer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 850px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.bar {
+  display: flex;             /* Legger bilde og tekst side om side */
+  align-items: center;       /* Sentrerer innholdet vertikalt */
+  gap: 1.5rem;               /* Luft mellom bildet og teksten */
+  background-color: #0f172a;
+  color: white;
+  text-decoration: none;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  border: 2px solid transparent;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.bar img {
+  width: 140px;              /* Fast bredde på bildet */
+  height: 100px;             /* Fast høyde på bildet */
+  object-fit: cover;         /* Klipper bildet pent uten å strekke det */
+  border-radius: 0.5rem;
+  flex-shrink: 0;            /* Hindrer at bildet blir klemt sammen av lang tekst */
+}
+
+.bar-tekst h2 {
+  margin: 0 0 0.4rem 0;
+  color: #00E600;
+}
+
+.bar-tekst p {
+  margin: 0;
+  color: #e2e8f0;
+}
+
+.bar:hover {
+  transform: translateY(-3px);
+  border-color: #00E600;
 }
