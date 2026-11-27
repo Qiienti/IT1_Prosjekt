@@ -5,37 +5,65 @@
 }
 
 nav {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
-  padding: 1rem 2rem;
-  background-color: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0f172a;
 }
- 
+
 nav a {
-  display: flex;
-  justify-content: center;
-  align-items: center;  
-  color:#00E600;
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  transition: 0.5s;
-  flex: 1;
-  white-space: nowrap;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
 }
- 
-nav div{
-    flex: 4;
-}
+
 nav a:hover {
-  background-color: #00E600;
-  color: #0f172a;
- 
+    background-color: #00E600;
+    color: #0f172a;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.home-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-link img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: opacity 0.2s;
+}
+
+.home-hover {
+    position: absolute;
+    opacity: 0;
+}
+
+nav a.home-link:hover {
+    background-color: transparent;
+}
+
+.home-link:hover .home-default {
+    opacity: 0;
+}
+
+.home-link:hover .home-hover {
+    opacity: 1;
 }
 
 h1, h2 {
