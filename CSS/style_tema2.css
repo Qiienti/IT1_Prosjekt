@@ -1,0 +1,90 @@
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+h2, h3 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+}
+
+nav {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+}
+
+
+
+
+html {
+    scroll-behavior: smooth;
+    background-color: #24003D;
+}
+details {
+    background-color: #741CAF;
+    color: #F5F7FA;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+summary {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+ details:hover {
+     color: #00E600;
+     cursor: crosshair;
+ }
+
+details p {
+    color: #FFFFFF;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: #0f172a;
+}
+
+nav a {
+    color:#00E600;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    background-color: #00E600;
+    color: #0f172a;
+
+}
+
+
+
