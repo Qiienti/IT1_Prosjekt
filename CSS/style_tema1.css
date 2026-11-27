@@ -14,16 +14,24 @@ nav {
   padding: 1rem 2rem;
   background-color: #0f172a;
 }
-
+ 
 nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
   color:#00E600;
   text-decoration: none;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   transition: 0.5s;
+  flex: 1;
+  white-space: nowrap;
 }
-
+ 
+nav div{
+    flex: 4;
+}
 nav a:hover {
   background-color: #00E600;
   color: #0f172a;
@@ -57,16 +65,16 @@ nav {
     font-weight: 500;
 }
 
-.bunn-meny {
-  position: static; /* Overstyrer sticky så den ikke henger fast i skjermen */
+.bunn {
+  position: static; 
   display: flex;
-  justify-content: center; /* Midtstiller lenkene nederst */
+  justify-content: flex-start; 
   gap: 1.5rem;
   padding: 1.5rem 2rem;
   background-color: #0f172a;
 }
 
-.bunn-meny a {
+.bunn a {
   color: #00E600;
   text-decoration: none;
   font-size: 1rem;
@@ -75,7 +83,14 @@ nav {
   transition: 0.5s;
 }
 
-.bunn-meny a:hover {
+.bunn a:hover {
   background-color: #00E600;
   color: black;
+}
+
+.lillabilde {
+  display: block;
+  width: 100%;
+  height: auto;
+  
 }
